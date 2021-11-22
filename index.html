@@ -75,14 +75,12 @@
         <div class="subheading mb-5">Educator | Researcher | Tech Enthusiast
         </div>
 	
-        <p class="lead mb-5">I am a Lecturer in the Department of Computer Science and Engineering in <a href="https://cse.buet.ac.bd/faculty_list/detail/shashata">Bangladesh University of Engineering and Technology (BUET)</a>. I received my B.Sc. in Computer Science and Engineering from <a href="https://www.buet.ac.bd/" target="_blank">the same university</a>. I completed my undergraduate thesis under the supervision of <a href="https://scholar.google.com/citations?user=h2vHz3wAAAAJ&hl=en" target="_blank">Dr. Md. Shamsuzzoha Bayzid</a>. I am also currently working as a student research intern in <a href="https://xulabs.github.io/"> Xu Lab </a> of Computational Biology department of Carnegie Mellon University.
+        <p class="lead mb-5">I am a Lecturer in the Department of Computer Science and Engineering in <a href="https://cse.buet.ac.bd/faculty_list/detail/shashata">Bangladesh University of Engineering and Technology (BUET)</a>. I received my B.Sc. in Computer Science and Engineering from the same university. I completed my undergraduate thesis under the supervision of <a href="https://scholar.google.com/citations?user=h2vHz3wAAAAJ&hl=en" target="_blank">Dr. Md. Shamsuzzoha Bayzid</a>. I am also currently working as a student research intern in <a href="https://xulabs.github.io/"> Xu Lab </a> of Computational Biology department of Carnegie Mellon University.
         My research interests broadly lies in: 
        
         <blockquote>
             <ul>
-                <li>
-                    <p style="font-variant:small-caps"><b>application of ML/DL in computational biology and bioinformatics</b></p>
-                </li>
+                
                 <li>
                     <p style="font-variant:small-caps"><b>designing efficient and scalable computational models for solving real biological problems.</b></p>
                 </li>
@@ -91,6 +89,9 @@
                 </li>
                 <li>
                     <p style="font-variant:small-caps"><b>analyzing and finding insights in genomics / bioimage / phylogenomics data using various algorithmic and learning approaches.</b></p>
+                </li>
+                <li>
+                    <p style="font-variant:small-caps"><b>application of machine learning in computational biology and bioinformatics</b></p>
                 </li>
                 <!--efficient data mining-->
                 <!-- <li>
@@ -170,13 +171,15 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Quartet Based Gene Tree Imputation Using Deep1Learning Improves Phylogenomic Analyses</h3>
+            <h3 class="mb-0">QT-GILD: Quartet based gene tree imputation using deep learning improves phylogenomic analyses despite missing data</h3>
             <div class="subheading mb-3">Co-Authors: Sazan Mahbub, Arpita Saha, Dr. Md. Shamsuzzoha Bayzid</div>
-            <p>Species tree estimation is frequently based on phylogenomic approaches that use multiple genes from throughout the genome. However, for a combination of reasons (ranging from sampling biases to more biological causes, as in gene birth and loss), gene trees are often incomplete, meaning that not all species of interest have a common set of genes. Incomplete gene trees can potentially impact the accuracy of phylogenomic inference. We introduce the problem of imputing the quartet distribution induced by a set of incomplete gene trees, which involves adding the missing quartets back to the quartet distribution. We present TAME (TAxonomic iMputation of gEne trees), an automated and specially tailored unsupervised deep learning technique, accompanied by cues from natural language processing (NLP), which  learns the quartet distribution in a given set of incomplete gene trees and generates a complete set of quartets accordingly. Our experimental studies on a collection of simulated and empirical data sets suggest that TAME can effectively impute the quartet distribution in a set of incomplete gene trees, significantly improving the accuracy of species tree inference. Interestingly, TAME not only imputes the missing quartets but it can alsocorrect the quartets present in the given set of incomplete estimated gene trees resulting in a set of quartets that is often closer to the set of quartets present in the true gene trees than those present in the estimated gene trees, and thereby accounting for gene tree estimation error.  TAME with its auto-encoder based deep learning approach combined with concepts from NLP and the demonstrated notable improvements in tree accuracy -- significantly advances the state-of-the-art in species tree estimation from gene trees despite missing data.</p>
-		        </div>
-	<div class="col-lg-4 col-md-4 col-sm-12">
-		<img class="img-fluid" src="img/Imputation.png" alt="">
-	</div>
+            <p>Species tree estimation is frequently based on phylogenomic approaches that use multiple genes from throughout the genome. However, for a combination of reasons (ranging from sampling biases to more biological causes, as in gene birth and loss), gene trees are often incomplete, meaning that not all species of interest have a common set of genes. Incomplete gene trees can potentially impact the accuracy of phylogenomic inference. We, for the first time, introduce the problem of imputing the quartet distribution induced by a set of incomplete gene trees, which involves adding the missing quartets back to the quartet distribution. We present QT-GILD, an automated and specially tailored unsupervised deep learning technique, accompanied by cues from natural language processing (NLP), which learns the quartet distribution in a given set of incomplete gene trees and generates a complete set of quartets accordingly. QT-GILD is a general-purpose technique needing no explicit modeling of the subject system or reasons for missing data or gene tree heterogeneity. Experimental studies on a collection of simulated and empirical data sets suggest that QT-GILD can effectively impute the quartet distribution, which results in a dramatic improvement in the species tree accuracy. Remarkably, QT-GILD not only imputes the missing quartets but it can also account for gene tree estimation error. Therefore, QT-GILD advances the state-of-the-art in species tree estimation from gene trees in the face of missing data. QT-GILD is freely available in open source form at <a href="https://github.com/pythonLoader/QT-GILD"> this link  </a> .</p>
+            <div class="subheading mb-3">Status: Under review in <a href="https://recomb2022.net/">RECOMB 2022</a>. Preprint available at <a href="https://www.biorxiv.org/content/10.1101/2020.06.03.131987v2" target="_blank">biorxiv.</a></div>
+		      
+          </div>
+        	<div class="col-lg-4 col-md-4 col-sm-12">
+        		<img class="img-fluid" src="img/Imputation.png" alt="">
+        	</div>
          
         </div>
 
@@ -185,12 +188,27 @@
             <h3 class="mb-0">Analyzing hCov Genome Sequences:  Predicting Virulence and Mutation</h3>
             <div class="subheading mb-3">Shashata Sawmya, Arpita Saha, Sadia Tasnim, Dr. M. Sohel Rahman </div>
             <p>Covid-19 pandemic, caused by the SARS-CoV-2 genome sequence of coronavirus, has affected millions of people all over the world and taken thousands of lives. It is of utmost importance that the character of this deadly virus be studied and its nature is analyzed. We present here an analysis pipeline comprising a classification exercise to identify the virulence of the genome sequences and extraction of important features from its genetic material that is used subsequently to predict mutation at those interesting sites using deep learning techniques. We have classified the SARS-CoV-2 genome sequences with high accuracy and predicted the mutations in the sites of Interest. In a nutshell, we have prepared an analysis pipeline for hCov genome sequences leveraging the power of machine intelligence and uncovered what remained apparently shrouded by raw data. The All the codes and data (except for the Genome Sequences) of our pipeline can be found at <a href="https://github.com/pythonLoader/Analyzing-hCov-Genome-Sequence"> this link  </a> </p>
-			<div class="subheading mb-3">Status: Under review. Preprint available at <a href="https://www.biorxiv.org/content/10.1101/2020.06.03.131987v2" target="_blank">biorxiv.</a></div>
-		  
-		</div>
+      			<div class="subheading mb-3">Status: Under review. Preprint available at <a href="https://www.biorxiv.org/content/10.1101/2020.06.03.131987v2" target="_blank">biorxiv.</a></div>
+      		  
+    		  </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
-				<img class="img-fluid" src="img/COVID.jpg" alt="">
-		  </div>
+    				<img class="img-fluid" src="img/COVID.jpg" alt="">
+    		  </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Phylogenetic Analyses of SARS-CoV-2 Strains Reveal its Link to the Spread of COVID-19 Across the Globe</h3>
+            <div class="subheading mb-3">Shashata Sawmya, Arpita Saha, Sadia Tasnim, Tanvir  Alam, Dr. M. Sohel Rahman </div>
+            <p>This study leveraged the phylogenetic analysis of more than 10,000 genome sequences of novel coronavirus (SARS-CoV-2) from 67 countries. Due to the requirement of high-end computational power for phylogenetic analysis, we leverage a fast yet highly accurate alignment-free method to develop the phylogenetic tree out of all the strains of novel coronavirus. K-Means clustering and PCA-based dimension reduction technique were used to identify a representative strain from each location. The resulting phylogenetic tree was able to highlight evolutionary relationships of SARS-CoV-2 genome and, subsequently, linked to the interpretation of facts and figures across the globe for the spread of COVID-19. Our analysis revealed that the geographical boundaries could not be explained by the phylogenetic analysis of novel coronavirus as it placed different countries from Asia, Europe and the USA in very close proximity in the tree. Instead, the commute of people from one country to another is the key to the spread of COVID-19. We believe our study will support the policymakers to contain the spread of COVID-19 globally. </p>
+            <div class="subheading mb-3">Status: Accepted at <a href="https://access.online-registry.net/medinfo2021/" target="_blank">MedInfo 2021.</a></div>
+
+
+            
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img class="img-fluid" height="1" src="img/Phylogeny_hCov.png" alt="">
+          </div>
         </div>
 
       </div>
@@ -200,9 +218,31 @@
 	<section class="resume-section p-1 p-lg-5 d-flex align-items-center" id="teaching">
       <div class="w-100">
         <h2 class="mb-5">Teaching Experiences</h2>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+           <h3 class="mb-0">July 2021 (BUET)</h3>
+            <ul class="fa-ul mb-0">
+              <li>
+              CSE462 Algorithm Engineering Sessional</li>
+              <li>
+              CSE412 Simulation and Modelling Sessional</li>
+              <li>
+              CSE326 Information System Design Sessional</li>
+              <li>
+              CSE314 Operating System Sessional</li>
+              <li>
+              CSE284 Digital Techniques Sessional</li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2021 - Present</span>
+          </div>
+        </div>
+        
+
       	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-			     <h3 class="mb-0">Summer 2021</h3>
+			     <h3 class="mb-0">Summer 2021 (BracU)</h3>
             <ul class="fa-ul mb-0">
   		    	  <li>
       				CSE230 Discrete Mathematics</li>
@@ -218,7 +258,7 @@
         </div>
 	      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-			     <h3 class="mb-0">Spring 2021</h3>
+			     <h3 class="mb-0">Spring 2021 (UIU)</h3>
             <ul class="fa-ul mb-0">
   		    	  <li>
       				CSE2233 Theory of Computation</li>
@@ -461,8 +501,11 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
       <div class="w-100">
 	      <h2 class="mb-5">Contact</h2>
-	      <div class="subheading mb-3"><a href="mailto:shashata003@gmail.com">shashata003 AT gmail DOT com, </a>
-          <a href="mailto:shashata@teacher.cse.buet.ac.bd">Shashata AT teacher DOT CSE DOT BUET DOT AC DOT BD</a>
+	      <div class="subheading mb-3">
+          <a href="mailto:shashata003@gmail.com">shashata003 AT gmail DOT com, </a>
+          <a href="mailto:shashata@cse.buet.ac.bd">Shashata AT CSE DOT BUET DOT AC DOT BD</a>
+          <!-- <a href="mailto:shashata@teacher.cse.buet.ac.bd">Shashata AT teacher DOT CSE DOT BUET DOT AC DOT BD</a> -->
+
 	       <!-- <a href="mailto:mru10@pitt.edu">mru AT cs DOT cmu DOT edu, </a>
 	       <a href="mailto:rafid.uddin95@gmail.com">rafid DOT uddin95 AT gmail DOT com</a></div>
         -->
